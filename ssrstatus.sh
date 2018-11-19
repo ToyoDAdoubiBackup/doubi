@@ -748,7 +748,7 @@ EOF
 }
 Download_SSRStatus(){
 	cd "/usr/local"
-	wget -N --no-check-certificate "https://github.com/ToyoDAdoubi/SSRStatus/archive/master.zip"
+	wget -N --no-check-certificate "https://github.com/ToyoDAdoubiBackup/SSRStatus/archive/master.zip"
 	[[ ! -e "master.zip" ]] && echo -e "${Error} SSRStatus 网页文件下载失败 !" && exit 1
 	unzip master.zip && rm -rf master.zip
 	[[ ! -e "SSRStatus-master" ]] && echo -e "${Error} SSRStatus 网页文件解压失败 !" && exit 1
